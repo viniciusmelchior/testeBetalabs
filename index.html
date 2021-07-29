@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"/>
+    <title>Seja Bem Vindo</title>
+</head>
+<body>
+    
+    <!--menu-->
+    <header class="cabecalho">
+        <div class="menu-hamburger"><i class="fas fa-bars" class="botao-fechar"></i></div>
+        <input type="checkbox" name="" id="check">
+        <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+        <div class="logo"><a href="index.html">LOGO</a></div>
+        <nav class="cabecalho-menu">
+            <ul class="menu-lista">
+                <li><a href=""><i class="far fa-user"></i></a></li>
+                <li><a href=""><i class="far fa-heart"></i></a></li>
+                <li><a href=""><i class="fas fa-cart-plus"></i></a></li>
+                <li><div>
+                    <form>
+                        <input type="search" name="pesquisar" id="caixa-pesquisa" class="caixa-pesquisa" placeholder="pesquisar">
+                        <button type="submit" class="botao-pesquisar"><i class="fas fa-search"></i></button>
+                    </form>
+                </div></li>
+            </ul>
+        </nav>
+    </header>
+        <!--conteudo-->
+        <!--categorias-->
+        <div class="categorias">
+            <ul class="container" id="lista-categorias"></ul>
+        </div>
+        <div class="categoria-mobile" id="categoria-mobile">
+            <ul class="container" id="lista-categorias-mobile"></ul>
+                <li>personagens</li>
+                <li>sandalias</li>
+                <li>brinquedos</li>
+                <li>chinelos</li>
+        </div>
+
+        <div class="container">
+            <!--banner-->
+            <section class="banner">
+              <div class="slider">
+                  <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <div class="slide first">
+                        <img src="img/banner1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/banner3.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/banner2.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="https://img.estadao.com.br/thumbs/640/resources/jpg/5/9/1443734128695.jpg" alt="">
+                    </div>
+
+                    <!--inicio automatico-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                    <!--inicio manual-->
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                  </div>
+              </div>
+            </section>
+           
+            <!--destaques-->
+            <section class="destaques">
+                <h2>Destaques</h2>
+                <div class="destaque-item">
+                    <div class="destaque-wrapper">
+                        <img src="img/banner destaques.png" alt="" class="destaque-1">
+                    </div>
+                </div>
+                <div class="destaque-item">
+                    <div class="destaque-wrapper">
+                        <img src="img/roupa1.webp" alt="" class="destaque-1">
+                    </div>
+                </div>
+            </section>
+            <!--mais vendidos-->
+            <section class="mais-vendidos">
+                <h2>Mais Vendidos</h2>
+                <div class="mais-vendido-cards container">
+                    <!-- <a href="" class="card-item">
+                        <div class="img-wrapper">
+                            <img src="https://picsum.photos/200" alt="">
+                        </div>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ex iusto mollitia nobis perspiciatis cum.</p>
+                        <p class="preco">R$15,90</p>
+                    </a> -->
+                </div>
+                <div class="carregar-itens">
+                    <button>Carregar Mais</button>
+                </div>
+            </section>
+        </div>
+
+        <!--footer-->
+        <footer class="footer">
+            <div class="container grid grid-3 footer-mobile">
+                <div>
+                    <h1>LOGO</h1>
+                    <p>Copyright &copy; 2021</p>
+                </div>
+                <nav>
+                    <ul>
+                        <li>Rua Qualquer Nome, 84</li>
+                        <li>São Paulo-SP</li>
+                        <li>Atendimento: 08h às 18h | Segunda à Sexta</li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+                </div>
+            </div>
+    </footer>
+
+
+    <script src="js/index.js"></script>
+    <script src="js/itens.js"></script>
+</body>
+</html>
